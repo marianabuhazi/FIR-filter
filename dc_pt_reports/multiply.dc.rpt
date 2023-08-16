@@ -1,0 +1,2398 @@
+1
+ 
+****************************************
+Report : area
+Design : multiply
+Version: O-2018.06-SP5-1
+Date   : Sun Dec 11 16:35:19 2022
+****************************************
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+Number of ports:                           70
+Number of nets:                           540
+Number of cells:                          496
+Number of combinational cells:            414
+Number of sequential cells:                82
+Number of macros/black boxes:               0
+Number of buf/inv:                        141
+Number of references:                      27
+
+Combinational area:               3155.040054
+Buf/Inv area:                      684.000027
+Noncombinational area:            2301.119942
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  5456.159996
+Total area:                 undefined
+1
+Information: Propagating switching activity (medium effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort medium
+Design : multiply
+Version: O-2018.06-SP5-1
+Date   : Sun Dec 11 16:35:19 2022
+****************************************
+
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+multiply                               3.74e-02    0.363 5.99e+03    0.401 100.0
+1
+ 
+****************************************
+Report : design
+Design : multiply
+Version: O-2018.06-SP5-1
+Date   : Sun Dec 11 16:35:19 2022
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+Local Link Library:
+
+    {/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : tt_1p2v_25c
+    Library : scx3_cmos8rf_lpvt_tt_1p2v_25c
+    Process :   1.00
+    Temperature :  25.00
+    Voltage :   1.20
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    No wire loading specified.
+
+
+Wire Loading Model Mode: top.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    DesignWare
+
+Design Parameters:
+
+    None specified.
+1
+ 
+****************************************
+Report : cell
+Design : multiply
+Version: O-2018.06-SP5-1
+Date   : Sun Dec 11 16:35:19 2022
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+ShiftM_Q_reg_0_           DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_1_           DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_2_           DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_3_           DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_4_           DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_5_           DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_6_           DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_7_           DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_8_           DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_9_           DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_10_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_11_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_12_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_13_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_14_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_15_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_16_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_17_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_18_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_19_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_20_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_21_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_22_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_23_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_24_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_25_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_26_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_27_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_28_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_29_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_30_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftM_Q_reg_31_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftQ_Q_reg_0_           DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftQ_Q_reg_1_           DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftQ_Q_reg_2_           DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftQ_Q_reg_3_           DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftQ_Q_reg_4_           DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftQ_Q_reg_5_           DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftQ_Q_reg_6_           DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftQ_Q_reg_7_           DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftQ_Q_reg_8_           DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftQ_Q_reg_9_           DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftQ_Q_reg_10_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftQ_Q_reg_11_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftQ_Q_reg_12_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftQ_Q_reg_13_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftQ_Q_reg_14_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+ShiftQ_Q_reg_15_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+U133                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U134                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U135                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U136                      NOR2X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U137                      OAI21X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U138                      OAI21XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U139                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U140                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U141                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U142                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U143                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U144                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U145                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U146                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U147                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U148                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U149                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U150                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U151                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U152                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U153                      OAI21XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U154                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U155                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U156                      OAI21XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U157                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U158                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U159                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U160                      OAI21XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U161                      OAI21XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U162                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U163                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U164                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U165                      OAI21XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U166                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U167                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U168                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U169                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U170                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U171                      OAI21XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U172                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U173                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U174                      OAI21XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U175                      OAI21XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U176                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U177                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U178                      OAI21XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U179                      OAI21XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U180                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U181                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U182                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U183                      XOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U184                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U185                      OAI21XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U186                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U187                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U188                      OAI21XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U189                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U190                      XOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U191                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U192                      XOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U193                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U194                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U195                      XOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U196                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U197                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U198                      XOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U199                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U200                      XOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U201                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U202                      XOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U203                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U204                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U205                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U206                      XOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U207                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U208                      OAI21XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U209                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U210                      XOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U211                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U212                      XOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U213                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U214                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U215                      OAI21XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U216                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U217                      XOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U218                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U219                      XOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U220                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U221                      CLKAND2X2TS     scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U222                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U223                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U224                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U225                      OAI21XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U226                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U227                      XOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U228                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U229                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U230                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U231                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U232                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U233                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U234                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U235                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U236                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U237                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U238                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U239                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U240                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U241                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U242                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U243                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U244                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U245                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U246                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U247                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U248                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U249                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U250                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U251                      OR2X1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U252                      OR2X1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U253                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U254                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U255                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U256                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U257                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U258                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U259                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U260                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U261                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U262                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U263                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U264                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U265                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U266                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U267                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U268                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U269                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U270                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U271                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U272                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U273                      OAI21XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U274                      OAI21XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U275                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U276                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U277                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U278                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U279                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U280                      OAI21XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U281                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U282                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U283                      OAI21XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U284                      OAI21XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U285                      OAI21XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U286                      OR2X1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U287                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U288                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U289                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U290                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U291                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U292                      AOI21X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U293                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U294                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U295                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U296                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U297                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U298                      AOI21X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U299                      OAI21X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U300                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U301                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U302                      NOR2X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U303                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U304                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U305                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U306                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U307                      AOI21X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U308                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U309                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U310                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U311                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U312                      AOI21X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U313                      OAI21X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U314                      AOI21X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U315                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U316                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U317                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U318                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U319                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U320                      OAI21X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U321                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U322                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U323                      AOI21X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U324                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U325                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U326                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U327                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U328                      AOI21X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U329                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U330                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U331                      AOI21X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U332                      OAI21X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U333                      OAI21XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U334                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U335                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U336                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U337                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U338                      AFHCINX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          47.520000 r
+U339                      AOI222XLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          12.960000 
+U340                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U341                      AOI222XLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          12.960000 
+U342                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U343                      AOI222XLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          12.960000 
+U344                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U345                      AOI222XLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          12.960000 
+U346                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U347                      AOI222XLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          12.960000 
+U348                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U349                      AOI222XLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          12.960000 
+U350                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U351                      AOI222XLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          12.960000 
+U352                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U353                      AOI222XLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          12.960000 
+U354                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U355                      AOI222XLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          12.960000 
+U356                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U357                      AOI222XLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          12.960000 
+U358                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U359                      AOI222XLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          12.960000 
+U360                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U361                      AOI222XLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          12.960000 
+U362                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U363                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U364                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U365                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U366                      AOI222XLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          12.960000 
+U367                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U368                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U369                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U370                      AOI222XLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          12.960000 
+U371                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U372                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U373                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U374                      AOI222XLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          12.960000 
+U375                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U376                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U377                      AOI222XLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          12.960000 
+U378                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U379                      AOI222XLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          12.960000 
+U380                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U381                      AOI222XLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          12.960000 
+U382                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U383                      AOI222XLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          12.960000 
+U384                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U385                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U386                      AOI222XLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          12.960000 
+U387                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U388                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U389                      AOI222XLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          12.960000 
+U390                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U391                      AOI222XLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          12.960000 
+U392                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U393                      AOI222XLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          12.960000 
+U394                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U395                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U396                      AOI222XLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          12.960000 
+U397                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U398                      AOI222XLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          12.960000 
+U399                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U400                      AOI222XLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          12.960000 
+U401                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U402                      AOI222XLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          12.960000 
+U403                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U404                      AFHCONX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          40.320000 r
+U405                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U406                      AFHCONX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          40.320000 r
+U407                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U408                      AFHCINX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          47.520000 r
+U409                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U410                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U411                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U412                      AOI21X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U413                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U414                      AOI21X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U415                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U416                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U417                      XNOR2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U418                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U419                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U420                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U421                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U422                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U423                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U424                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U425                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U426                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U427                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U428                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U429                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U430                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U431                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U432                      NOR4XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U433                      NOR4XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U434                      NOR4XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U435                      NOR4XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U436                      AND4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U437                      AOI211XLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U438                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U439                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U440                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U441                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U442                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U443                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U444                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U445                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U446                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U447                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U448                      XNOR2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U449                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U450                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U451                      XNOR2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U452                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U453                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U454                      AOI21X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U455                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U456                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U457                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U458                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U459                      CLKINVX1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U460                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U461                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U462                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U463                      AOI21X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U464                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U465                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U466                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U467                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U468                      XNOR2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U469                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U470                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U471                      XNOR2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U472                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U473                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U474                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U475                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U476                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U477                      XNOR2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U478                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U479                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U480                      XNOR2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U481                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U482                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U483                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U484                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U485                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U486                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U487                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U488                      AOI21X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U489                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U490                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U491                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U492                      AOI21X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U493                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U494                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U495                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U496                      AOI21X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U497                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U498                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U499                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U500                      AOI21X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U501                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U502                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U503                      AOI21X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U504                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U505                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U506                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U507                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U508                      XNOR2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U509                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U510                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U511                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U512                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U513                      XNOR2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U514                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U515                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U516                      XNOR2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U517                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U518                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U519                      XNOR2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U520                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U521                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U522                      XNOR2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U523                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U524                      AOI21X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U525                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U526                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U527                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U528                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U529                      NOR2X2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U530                      AFHCONX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          40.320000 r
+U531                      AFHCINX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          47.520000 r
+U532                      AO22X2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U533                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U534                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U535                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U536                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U537                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U538                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U539                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U540                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U541                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U542                      OAI2BB1X1TS     scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U543                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U544                      OAI2BB1X1TS     scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U545                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U546                      OAI2BB1X1TS     scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+regp_Q_reg_0_             DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_1_             DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_2_             DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_3_             DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_4_             DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_5_             DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_6_             DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_7_             DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_8_             DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_9_             DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_10_            DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_11_            DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_12_            DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_13_            DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_14_            DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_15_            DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_16_            DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_17_            DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_18_            DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_19_            DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_20_            DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_21_            DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_22_            DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_23_            DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_24_            DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_25_            DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_26_            DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_27_            DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_28_            DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_29_            DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_30_            DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+regp_Q_reg_31_            DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+y_reg_0_                  DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+y_reg_1_                  DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+--------------------------------------------------------------------------------
+Total 496 cells                                           5456.159996
+1
+ 
+****************************************
+Report : port
+        -verbose
+Design : multiply
+Version: O-2018.06-SP5-1
+Date   : Sun Dec 11 16:35:19 2022
+****************************************
+
+
+
+Attributes:
+    d - dont_touch_network
+    i - ideal_network
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+clk            in      0.0000   0.0000    1.02    0.00   --         d, i
+datam[0]       in      0.0000   0.0000    1.02    0.00   --         
+datam[1]       in      0.0000   0.0000    1.02    0.00   --         
+datam[2]       in      0.0000   0.0000    1.02    0.00   --         
+datam[3]       in      0.0000   0.0000    1.02    0.00   --         
+datam[4]       in      0.0000   0.0000    1.02    0.00   --         
+datam[5]       in      0.0000   0.0000    1.02    0.00   --         
+datam[6]       in      0.0000   0.0000    1.02    0.00   --         
+datam[7]       in      0.0000   0.0000    1.02    0.00   --         
+datam[8]       in      0.0000   0.0000    1.02    0.00   --         
+datam[9]       in      0.0000   0.0000    1.02    0.00   --         
+datam[10]      in      0.0000   0.0000    1.02    0.00   --         
+datam[11]      in      0.0000   0.0000    1.02    0.00   --         
+datam[12]      in      0.0000   0.0000    1.02    0.00   --         
+datam[13]      in      0.0000   0.0000    1.02    0.00   --         
+datam[14]      in      0.0000   0.0000    1.02    0.00   --         
+datam[15]      in      0.0000   0.0000    1.02    0.00   --         
+dataq[0]       in      0.0000   0.0000    1.02    0.00   --         
+dataq[1]       in      0.0000   0.0000    1.02    0.00   --         
+dataq[2]       in      0.0000   0.0000    1.02    0.00   --         
+dataq[3]       in      0.0000   0.0000    1.02    0.00   --         
+dataq[4]       in      0.0000   0.0000    1.02    0.00   --         
+dataq[5]       in      0.0000   0.0000    1.02    0.00   --         
+dataq[6]       in      0.0000   0.0000    1.02    0.00   --         
+dataq[7]       in      0.0000   0.0000    1.02    0.00   --         
+dataq[8]       in      0.0000   0.0000    1.02    0.00   --         
+dataq[9]       in      0.0000   0.0000    1.02    0.00   --         
+dataq[10]      in      0.0000   0.0000    1.02    0.00   --         
+dataq[11]      in      0.0000   0.0000    1.02    0.00   --         
+dataq[12]      in      0.0000   0.0000    1.02    0.00   --         
+dataq[13]      in      0.0000   0.0000    1.02    0.00   --         
+dataq[14]      in      0.0000   0.0000    1.02    0.00   --         
+dataq[15]      in      0.0000   0.0000    1.02    0.00   --         
+lm             in      0.0000   0.0000    1.02    0.00   --         
+lq             in      0.0000   0.0000    1.02    0.00   --         
+rstn           in      0.0000   0.0000    1.02    0.00   --         
+s              in      0.0000   0.0000    1.02    0.00   --         
+done           out     0.0500   0.0000   --      --      --         
+p[0]           out     0.0500   0.0000   --      --      --         
+p[1]           out     0.0500   0.0000   --      --      --         
+p[2]           out     0.0500   0.0000   --      --      --         
+p[3]           out     0.0500   0.0000   --      --      --         
+p[4]           out     0.0500   0.0000   --      --      --         
+p[5]           out     0.0500   0.0000   --      --      --         
+p[6]           out     0.0500   0.0000   --      --      --         
+p[7]           out     0.0500   0.0000   --      --      --         
+p[8]           out     0.0500   0.0000   --      --      --         
+p[9]           out     0.0500   0.0000   --      --      --         
+p[10]          out     0.0500   0.0000   --      --      --         
+p[11]          out     0.0500   0.0000   --      --      --         
+p[12]          out     0.0500   0.0000   --      --      --         
+p[13]          out     0.0500   0.0000   --      --      --         
+p[14]          out     0.0500   0.0000   --      --      --         
+p[15]          out     0.0500   0.0000   --      --      --         
+p[16]          out     0.0500   0.0000   --      --      --         
+p[17]          out     0.0500   0.0000   --      --      --         
+p[18]          out     0.0500   0.0000   --      --      --         
+p[19]          out     0.0500   0.0000   --      --      --         
+p[20]          out     0.0500   0.0000   --      --      --         
+p[21]          out     0.0500   0.0000   --      --      --         
+p[22]          out     0.0500   0.0000   --      --      --         
+p[23]          out     0.0500   0.0000   --      --      --         
+p[24]          out     0.0500   0.0000   --      --      --         
+p[25]          out     0.0500   0.0000   --      --      --         
+p[26]          out     0.0500   0.0000   --      --      --         
+p[27]          out     0.0500   0.0000   --      --      --         
+p[28]          out     0.0500   0.0000   --      --      --         
+p[29]          out     0.0500   0.0000   --      --      --         
+p[30]          out     0.0500   0.0000   --      --      --         
+p[31]          out     0.0500   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+clk                1      --              --              --        -- 
+datam[0]           1      --              --              --        -- 
+datam[1]           1      --              --              --        -- 
+datam[2]           1      --              --              --        -- 
+datam[3]           1      --              --              --        -- 
+datam[4]           1      --              --              --        -- 
+datam[5]           1      --              --              --        -- 
+datam[6]           1      --              --              --        -- 
+datam[7]           1      --              --              --        -- 
+datam[8]           1      --              --              --        -- 
+datam[9]           1      --              --              --        -- 
+datam[10]          1      --              --              --        -- 
+datam[11]          1      --              --              --        -- 
+datam[12]          1      --              --              --        -- 
+datam[13]          1      --              --              --        -- 
+datam[14]          1      --              --              --        -- 
+datam[15]          1      --              --              --        -- 
+dataq[0]           1      --              --              --        -- 
+dataq[1]           1      --              --              --        -- 
+dataq[2]           1      --              --              --        -- 
+dataq[3]           1      --              --              --        -- 
+dataq[4]           1      --              --              --        -- 
+dataq[5]           1      --              --              --        -- 
+dataq[6]           1      --              --              --        -- 
+dataq[7]           1      --              --              --        -- 
+dataq[8]           1      --              --              --        -- 
+dataq[9]           1      --              --              --        -- 
+dataq[10]          1      --              --              --        -- 
+dataq[11]          1      --              --              --        -- 
+dataq[12]          1      --              --              --        -- 
+dataq[13]          1      --              --              --        -- 
+dataq[14]          1      --              --              --        -- 
+dataq[15]          1      --              --              --        -- 
+lm                 1      --              --              --        -- 
+lq                 1      --              --              --        -- 
+rstn               1      --              --              --        -- 
+s                  1      --              --              --        -- 
+done               1      --              --              --        -- 
+p[0]               1      --              --              --        -- 
+p[1]               1      --              --              --        -- 
+p[2]               1      --              --              --        -- 
+p[3]               1      --              --              --        -- 
+p[4]               1      --              --              --        -- 
+p[5]               1      --              --              --        -- 
+p[6]               1      --              --              --        -- 
+p[7]               1      --              --              --        -- 
+p[8]               1      --              --              --        -- 
+p[9]               1      --              --              --        -- 
+p[10]              1      --              --              --        -- 
+p[11]              1      --              --              --        -- 
+p[12]              1      --              --              --        -- 
+p[13]              1      --              --              --        -- 
+p[14]              1      --              --              --        -- 
+p[15]              1      --              --              --        -- 
+p[16]              1      --              --              --        -- 
+p[17]              1      --              --              --        -- 
+p[18]              1      --              --              --        -- 
+p[19]              1      --              --              --        -- 
+p[20]              1      --              --              --        -- 
+p[21]              1      --              --              --        -- 
+p[22]              1      --              --              --        -- 
+p[23]              1      --              --              --        -- 
+p[24]              1      --              --              --        -- 
+p[25]              1      --              --              --        -- 
+p[26]              1      --              --              --        -- 
+p[27]              1      --              --              --        -- 
+p[28]              1      --              --              --        -- 
+p[29]              1      --              --              --        -- 
+p[30]              1      --              --              --        -- 
+p[31]              1      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+clk           --      --      --      --      --      4.00
+datam[0]      0.05    0.05    0.05    0.05  clk       4.00  
+datam[1]      0.05    0.05    0.05    0.05  clk       4.00  
+datam[2]      0.05    0.05    0.05    0.05  clk       4.00  
+datam[3]      0.05    0.05    0.05    0.05  clk       4.00  
+datam[4]      0.05    0.05    0.05    0.05  clk       4.00  
+datam[5]      0.05    0.05    0.05    0.05  clk       4.00  
+datam[6]      0.05    0.05    0.05    0.05  clk       4.00  
+datam[7]      0.05    0.05    0.05    0.05  clk       4.00  
+datam[8]      0.05    0.05    0.05    0.05  clk       4.00  
+datam[9]      0.05    0.05    0.05    0.05  clk       4.00  
+datam[10]     0.05    0.05    0.05    0.05  clk       4.00  
+datam[11]     0.05    0.05    0.05    0.05  clk       4.00  
+datam[12]     0.05    0.05    0.05    0.05  clk       4.00  
+datam[13]     0.05    0.05    0.05    0.05  clk       4.00  
+datam[14]     0.05    0.05    0.05    0.05  clk       4.00  
+datam[15]     0.05    0.05    0.05    0.05  clk       4.00  
+dataq[0]      0.05    0.05    0.05    0.05  clk       4.00  
+dataq[1]      0.05    0.05    0.05    0.05  clk       4.00  
+dataq[2]      0.05    0.05    0.05    0.05  clk       4.00  
+dataq[3]      0.05    0.05    0.05    0.05  clk       4.00  
+dataq[4]      0.05    0.05    0.05    0.05  clk       4.00  
+dataq[5]      0.05    0.05    0.05    0.05  clk       4.00  
+dataq[6]      0.05    0.05    0.05    0.05  clk       4.00  
+dataq[7]      0.05    0.05    0.05    0.05  clk       4.00  
+dataq[8]      0.05    0.05    0.05    0.05  clk       4.00  
+dataq[9]      0.05    0.05    0.05    0.05  clk       4.00  
+dataq[10]     0.05    0.05    0.05    0.05  clk       4.00  
+dataq[11]     0.05    0.05    0.05    0.05  clk       4.00  
+dataq[12]     0.05    0.05    0.05    0.05  clk       4.00  
+dataq[13]     0.05    0.05    0.05    0.05  clk       4.00  
+dataq[14]     0.05    0.05    0.05    0.05  clk       4.00  
+dataq[15]     0.05    0.05    0.05    0.05  clk       4.00  
+lm            0.05    0.05    0.05    0.05  clk       4.00  
+lq            0.05    0.05    0.05    0.05  clk       4.00  
+rstn          0.05    0.05    0.05    0.05  clk       4.00  
+s             0.05    0.05    0.05    0.05  clk       4.00  
+
+
+                    Driving Cell
+Input Port   Rise(min/max)      Fall(min/max)      Mult(min/max)  Attrs(min/max)
+--------------------------------------------------------------------------------
+clk          INVX1TS            INVX1TS              -- /  --     
+datam[0]     INVX1TS            INVX1TS              -- /  --     
+datam[1]     INVX1TS            INVX1TS              -- /  --     
+datam[2]     INVX1TS            INVX1TS              -- /  --     
+datam[3]     INVX1TS            INVX1TS              -- /  --     
+datam[4]     INVX1TS            INVX1TS              -- /  --     
+datam[5]     INVX1TS            INVX1TS              -- /  --     
+datam[6]     INVX1TS            INVX1TS              -- /  --     
+datam[7]     INVX1TS            INVX1TS              -- /  --     
+datam[8]     INVX1TS            INVX1TS              -- /  --     
+datam[9]     INVX1TS            INVX1TS              -- /  --     
+datam[10]    INVX1TS            INVX1TS              -- /  --     
+datam[11]    INVX1TS            INVX1TS              -- /  --     
+datam[12]    INVX1TS            INVX1TS              -- /  --     
+datam[13]    INVX1TS            INVX1TS              -- /  --     
+datam[14]    INVX1TS            INVX1TS              -- /  --     
+datam[15]    INVX1TS            INVX1TS              -- /  --     
+dataq[0]     INVX1TS            INVX1TS              -- /  --     
+dataq[1]     INVX1TS            INVX1TS              -- /  --     
+dataq[2]     INVX1TS            INVX1TS              -- /  --     
+dataq[3]     INVX1TS            INVX1TS              -- /  --     
+dataq[4]     INVX1TS            INVX1TS              -- /  --     
+dataq[5]     INVX1TS            INVX1TS              -- /  --     
+dataq[6]     INVX1TS            INVX1TS              -- /  --     
+dataq[7]     INVX1TS            INVX1TS              -- /  --     
+dataq[8]     INVX1TS            INVX1TS              -- /  --     
+dataq[9]     INVX1TS            INVX1TS              -- /  --     
+dataq[10]    INVX1TS            INVX1TS              -- /  --     
+dataq[11]    INVX1TS            INVX1TS              -- /  --     
+dataq[12]    INVX1TS            INVX1TS              -- /  --     
+dataq[13]    INVX1TS            INVX1TS              -- /  --     
+dataq[14]    INVX1TS            INVX1TS              -- /  --     
+dataq[15]    INVX1TS            INVX1TS              -- /  --     
+lm           INVX1TS            INVX1TS              -- /  --     
+lq           INVX1TS            INVX1TS              -- /  --     
+rstn         INVX1TS            INVX1TS              -- /  --     
+s            INVX1TS            INVX1TS              -- /  --     
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+clk           --      --     --      --     --      --     --     --        -- 
+datam[0]      --      --     --      --     --      --     --     --        -- 
+datam[1]      --      --     --      --     --      --     --     --        -- 
+datam[2]      --      --     --      --     --      --     --     --        -- 
+datam[3]      --      --     --      --     --      --     --     --        -- 
+datam[4]      --      --     --      --     --      --     --     --        -- 
+datam[5]      --      --     --      --     --      --     --     --        -- 
+datam[6]      --      --     --      --     --      --     --     --        -- 
+datam[7]      --      --     --      --     --      --     --     --        -- 
+datam[8]      --      --     --      --     --      --     --     --        -- 
+datam[9]      --      --     --      --     --      --     --     --        -- 
+datam[10]     --      --     --      --     --      --     --     --        -- 
+datam[11]     --      --     --      --     --      --     --     --        -- 
+datam[12]     --      --     --      --     --      --     --     --        -- 
+datam[13]     --      --     --      --     --      --     --     --        -- 
+datam[14]     --      --     --      --     --      --     --     --        -- 
+datam[15]     --      --     --      --     --      --     --     --        -- 
+dataq[0]      --      --     --      --     --      --     --     --        -- 
+dataq[1]      --      --     --      --     --      --     --     --        -- 
+dataq[2]      --      --     --      --     --      --     --     --        -- 
+dataq[3]      --      --     --      --     --      --     --     --        -- 
+dataq[4]      --      --     --      --     --      --     --     --        -- 
+dataq[5]      --      --     --      --     --      --     --     --        -- 
+dataq[6]      --      --     --      --     --      --     --     --        -- 
+dataq[7]      --      --     --      --     --      --     --     --        -- 
+dataq[8]      --      --     --      --     --      --     --     --        -- 
+dataq[9]      --      --     --      --     --      --     --     --        -- 
+dataq[10]     --      --     --      --     --      --     --     --        -- 
+dataq[11]     --      --     --      --     --      --     --     --        -- 
+dataq[12]     --      --     --      --     --      --     --     --        -- 
+dataq[13]     --      --     --      --     --      --     --     --        -- 
+dataq[14]     --      --     --      --     --      --     --     --        -- 
+dataq[15]     --      --     --      --     --      --     --     --        -- 
+lm            --      --     --      --     --      --     --     --        -- 
+lq            --      --     --      --     --      --     --     --        -- 
+rstn          --      --     --      --     --      --     --     --        -- 
+s             --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+clk           --      --      --      -- 
+datam[0]      --      --      --      -- 
+datam[1]      --      --      --      -- 
+datam[2]      --      --      --      -- 
+datam[3]      --      --      --      -- 
+datam[4]      --      --      --      -- 
+datam[5]      --      --      --      -- 
+datam[6]      --      --      --      -- 
+datam[7]      --      --      --      -- 
+datam[8]      --      --      --      -- 
+datam[9]      --      --      --      -- 
+datam[10]     --      --      --      -- 
+datam[11]     --      --      --      -- 
+datam[12]     --      --      --      -- 
+datam[13]     --      --      --      -- 
+datam[14]     --      --      --      -- 
+datam[15]     --      --      --      -- 
+dataq[0]      --      --      --      -- 
+dataq[1]      --      --      --      -- 
+dataq[2]      --      --      --      -- 
+dataq[3]      --      --      --      -- 
+dataq[4]      --      --      --      -- 
+dataq[5]      --      --      --      -- 
+dataq[6]      --      --      --      -- 
+dataq[7]      --      --      --      -- 
+dataq[8]      --      --      --      -- 
+dataq[9]      --      --      --      -- 
+dataq[10]     --      --      --      -- 
+dataq[11]     --      --      --      -- 
+dataq[12]     --      --      --      -- 
+dataq[13]     --      --      --      -- 
+dataq[14]     --      --      --      -- 
+dataq[15]     --      --      --      -- 
+lm            --      --      --      -- 
+lq            --      --      --      -- 
+rstn          --      --      --      -- 
+s             --      --      --      -- 
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+done          0.05    0.05    0.05    0.05  clk       0.00  
+p[0]          0.05    0.05    0.05    0.05  clk       0.00  
+p[1]          0.05    0.05    0.05    0.05  clk       0.00  
+p[2]          0.05    0.05    0.05    0.05  clk       0.00  
+p[3]          0.05    0.05    0.05    0.05  clk       0.00  
+p[4]          0.05    0.05    0.05    0.05  clk       0.00  
+p[5]          0.05    0.05    0.05    0.05  clk       0.00  
+p[6]          0.05    0.05    0.05    0.05  clk       0.00  
+p[7]          0.05    0.05    0.05    0.05  clk       0.00  
+p[8]          0.05    0.05    0.05    0.05  clk       0.00  
+p[9]          0.05    0.05    0.05    0.05  clk       0.00  
+p[10]         0.05    0.05    0.05    0.05  clk       0.00  
+p[11]         0.05    0.05    0.05    0.05  clk       0.00  
+p[12]         0.05    0.05    0.05    0.05  clk       0.00  
+p[13]         0.05    0.05    0.05    0.05  clk       0.00  
+p[14]         0.05    0.05    0.05    0.05  clk       0.00  
+p[15]         0.05    0.05    0.05    0.05  clk       0.00  
+p[16]         0.05    0.05    0.05    0.05  clk       0.00  
+p[17]         0.05    0.05    0.05    0.05  clk       0.00  
+p[18]         0.05    0.05    0.05    0.05  clk       0.00  
+p[19]         0.05    0.05    0.05    0.05  clk       0.00  
+p[20]         0.05    0.05    0.05    0.05  clk       0.00  
+p[21]         0.05    0.05    0.05    0.05  clk       0.00  
+p[22]         0.05    0.05    0.05    0.05  clk       0.00  
+p[23]         0.05    0.05    0.05    0.05  clk       0.00  
+p[24]         0.05    0.05    0.05    0.05  clk       0.00  
+p[25]         0.05    0.05    0.05    0.05  clk       0.00  
+p[26]         0.05    0.05    0.05    0.05  clk       0.00  
+p[27]         0.05    0.05    0.05    0.05  clk       0.00  
+p[28]         0.05    0.05    0.05    0.05  clk       0.00  
+p[29]         0.05    0.05    0.05    0.05  clk       0.00  
+p[30]         0.05    0.05    0.05    0.05  clk       0.00  
+p[31]         0.05    0.05    0.05    0.05  clk       0.00  
+
+1
+ 
+****************************************
+Report : compile_options
+Design : multiply
+Version: O-2018.06-SP5-1
+Date   : Sun Dec 11 16:35:19 2022
+****************************************
+
+Design                                   Compile Option         Value
+--------------------------------------------------------------------------------
+multiply                                 flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+                                         fix_multiple_port_nets feedthroughs
+                                                                constants
+                                                                outputs
+                                                                buffer_constants
+                                         isolate_port           disabled
+--------------------------------------------------------------------------------
+1
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : multiply
+Version: O-2018.06-SP5-1
+Date   : Sun Dec 11 16:35:19 2022
+****************************************
+
+
+    Design: multiply
+
+    max_area               0.00
+  - Current Area        5456.16
+  ------------------------------
+    Slack              -5456.16  (VIOLATED)
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 100
+        -max_paths 20
+Design : multiply
+Version: O-2018.06-SP5-1
+Date   : Sun Dec 11 16:35:19 2022
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: regp_Q_reg_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: regp_Q_reg_31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regp_Q_reg_17_/CK (DFFRX2TS)             0.00       0.00 r
+  regp_Q_reg_17_/Q (DFFRX2TS)              0.89       0.89 r
+  U145/Y (NOR2XLTS)                        0.30       1.19 f
+  U144/Y (NOR2XLTS)                        0.35       1.54 r
+  U315/Y (NAND2X1TS)                       0.24       1.77 f
+  U162/Y (NOR2XLTS)                        0.31       2.09 r
+  U317/Y (NAND2X1TS)                       0.20       2.29 f
+  U332/Y (OAI21X1TS)                       0.28       2.56 r
+  U406/CON (AFHCONX2TS)                    0.21       2.77 f
+  U408/CO (AFHCINX2TS)                     0.32       3.10 r
+  U404/CON (AFHCONX2TS)                    0.19       3.29 f
+  U338/CO (AFHCINX2TS)                     0.32       3.62 r
+  U530/CON (AFHCONX2TS)                    0.19       3.81 f
+  U531/S (AFHCINX2TS)                      0.47       4.28 f
+  U532/Y (AO22X2TS)                        0.30       4.59 f
+  regp_Q_reg_31_/D (DFFRX2TS)              0.00       4.59 f
+  data arrival time                                   4.59
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  regp_Q_reg_31_/CK (DFFRX2TS)             0.00       5.00 r
+  library setup time                      -0.41       4.59
+  data required time                                  4.59
+  -----------------------------------------------------------
+  data required time                                  4.59
+  data arrival time                                  -4.59
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: regp_Q_reg_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: regp_Q_reg_31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regp_Q_reg_17_/CK (DFFRX2TS)             0.00       0.00 r
+  regp_Q_reg_17_/Q (DFFRX2TS)              0.89       0.89 r
+  U145/Y (NOR2XLTS)                        0.30       1.19 f
+  U144/Y (NOR2XLTS)                        0.35       1.54 r
+  U315/Y (NAND2X1TS)                       0.24       1.77 f
+  U162/Y (NOR2XLTS)                        0.31       2.09 r
+  U317/Y (NAND2X1TS)                       0.20       2.29 f
+  U332/Y (OAI21X1TS)                       0.28       2.56 r
+  U406/CON (AFHCONX2TS)                    0.21       2.77 f
+  U408/CO (AFHCINX2TS)                     0.32       3.10 r
+  U404/CON (AFHCONX2TS)                    0.19       3.29 f
+  U338/CO (AFHCINX2TS)                     0.32       3.62 r
+  U530/CON (AFHCONX2TS)                    0.19       3.81 f
+  U531/S (AFHCINX2TS)                      0.47       4.28 f
+  U532/Y (AO22X2TS)                        0.30       4.59 f
+  regp_Q_reg_31_/D (DFFRX2TS)              0.00       4.59 f
+  data arrival time                                   4.59
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  regp_Q_reg_31_/CK (DFFRX2TS)             0.00       5.00 r
+  library setup time                      -0.41       4.59
+  data required time                                  4.59
+  -----------------------------------------------------------
+  data required time                                  4.59
+  data arrival time                                  -4.59
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: regp_Q_reg_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: regp_Q_reg_31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regp_Q_reg_17_/CK (DFFRX2TS)             0.00       0.00 r
+  regp_Q_reg_17_/Q (DFFRX2TS)              0.89       0.89 r
+  U145/Y (NOR2XLTS)                        0.30       1.19 f
+  U144/Y (NOR2XLTS)                        0.35       1.54 r
+  U315/Y (NAND2X1TS)                       0.24       1.77 f
+  U162/Y (NOR2XLTS)                        0.31       2.09 r
+  U317/Y (NAND2X1TS)                       0.20       2.29 f
+  U332/Y (OAI21X1TS)                       0.28       2.56 r
+  U406/CON (AFHCONX2TS)                    0.21       2.77 f
+  U408/CO (AFHCINX2TS)                     0.32       3.10 r
+  U404/CON (AFHCONX2TS)                    0.19       3.29 f
+  U338/CO (AFHCINX2TS)                     0.32       3.62 r
+  U530/CON (AFHCONX2TS)                    0.19       3.81 f
+  U531/S (AFHCINX2TS)                      0.47       4.28 f
+  U532/Y (AO22X2TS)                        0.30       4.59 f
+  regp_Q_reg_31_/D (DFFRX2TS)              0.00       4.59 f
+  data arrival time                                   4.59
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  regp_Q_reg_31_/CK (DFFRX2TS)             0.00       5.00 r
+  library setup time                      -0.41       4.59
+  data required time                                  4.59
+  -----------------------------------------------------------
+  data required time                                  4.59
+  data arrival time                                  -4.59
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: regp_Q_reg_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: regp_Q_reg_31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regp_Q_reg_17_/CK (DFFRX2TS)             0.00       0.00 r
+  regp_Q_reg_17_/Q (DFFRX2TS)              0.89       0.89 r
+  U145/Y (NOR2XLTS)                        0.30       1.19 f
+  U144/Y (NOR2XLTS)                        0.35       1.54 r
+  U315/Y (NAND2X1TS)                       0.24       1.77 f
+  U162/Y (NOR2XLTS)                        0.31       2.09 r
+  U317/Y (NAND2X1TS)                       0.20       2.29 f
+  U332/Y (OAI21X1TS)                       0.28       2.56 r
+  U406/CON (AFHCONX2TS)                    0.21       2.77 f
+  U408/CO (AFHCINX2TS)                     0.32       3.10 r
+  U404/CON (AFHCONX2TS)                    0.19       3.29 f
+  U338/CO (AFHCINX2TS)                     0.32       3.62 r
+  U530/CON (AFHCONX2TS)                    0.19       3.81 f
+  U531/S (AFHCINX2TS)                      0.47       4.28 f
+  U532/Y (AO22X2TS)                        0.30       4.59 f
+  regp_Q_reg_31_/D (DFFRX2TS)              0.00       4.59 f
+  data arrival time                                   4.59
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  regp_Q_reg_31_/CK (DFFRX2TS)             0.00       5.00 r
+  library setup time                      -0.41       4.59
+  data required time                                  4.59
+  -----------------------------------------------------------
+  data required time                                  4.59
+  data arrival time                                  -4.59
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: regp_Q_reg_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: regp_Q_reg_31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regp_Q_reg_17_/CK (DFFRX2TS)             0.00       0.00 r
+  regp_Q_reg_17_/Q (DFFRX2TS)              0.89       0.89 r
+  U145/Y (NOR2XLTS)                        0.30       1.19 f
+  U144/Y (NOR2XLTS)                        0.35       1.54 r
+  U315/Y (NAND2X1TS)                       0.24       1.77 f
+  U162/Y (NOR2XLTS)                        0.31       2.09 r
+  U317/Y (NAND2X1TS)                       0.20       2.29 f
+  U332/Y (OAI21X1TS)                       0.28       2.56 r
+  U406/CON (AFHCONX2TS)                    0.21       2.77 f
+  U408/CO (AFHCINX2TS)                     0.32       3.10 r
+  U404/CON (AFHCONX2TS)                    0.19       3.29 f
+  U338/CO (AFHCINX2TS)                     0.32       3.62 r
+  U530/CON (AFHCONX2TS)                    0.19       3.81 f
+  U531/S (AFHCINX2TS)                      0.47       4.28 f
+  U532/Y (AO22X2TS)                        0.30       4.59 f
+  regp_Q_reg_31_/D (DFFRX2TS)              0.00       4.59 f
+  data arrival time                                   4.59
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  regp_Q_reg_31_/CK (DFFRX2TS)             0.00       5.00 r
+  library setup time                      -0.41       4.59
+  data required time                                  4.59
+  -----------------------------------------------------------
+  data required time                                  4.59
+  data arrival time                                  -4.59
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: regp_Q_reg_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: regp_Q_reg_31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regp_Q_reg_17_/CK (DFFRX2TS)             0.00       0.00 r
+  regp_Q_reg_17_/Q (DFFRX2TS)              0.89       0.89 r
+  U145/Y (NOR2XLTS)                        0.30       1.19 f
+  U144/Y (NOR2XLTS)                        0.35       1.54 r
+  U315/Y (NAND2X1TS)                       0.24       1.77 f
+  U162/Y (NOR2XLTS)                        0.31       2.09 r
+  U317/Y (NAND2X1TS)                       0.20       2.29 f
+  U332/Y (OAI21X1TS)                       0.28       2.56 r
+  U406/CON (AFHCONX2TS)                    0.21       2.77 f
+  U408/CO (AFHCINX2TS)                     0.32       3.10 r
+  U404/CON (AFHCONX2TS)                    0.19       3.29 f
+  U338/CO (AFHCINX2TS)                     0.32       3.62 r
+  U530/CON (AFHCONX2TS)                    0.19       3.81 f
+  U531/S (AFHCINX2TS)                      0.47       4.28 f
+  U532/Y (AO22X2TS)                        0.30       4.59 f
+  regp_Q_reg_31_/D (DFFRX2TS)              0.00       4.59 f
+  data arrival time                                   4.59
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  regp_Q_reg_31_/CK (DFFRX2TS)             0.00       5.00 r
+  library setup time                      -0.41       4.59
+  data required time                                  4.59
+  -----------------------------------------------------------
+  data required time                                  4.59
+  data arrival time                                  -4.59
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: regp_Q_reg_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: regp_Q_reg_31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regp_Q_reg_17_/CK (DFFRX2TS)             0.00       0.00 r
+  regp_Q_reg_17_/Q (DFFRX2TS)              0.89       0.89 r
+  U145/Y (NOR2XLTS)                        0.30       1.19 f
+  U144/Y (NOR2XLTS)                        0.35       1.54 r
+  U315/Y (NAND2X1TS)                       0.24       1.77 f
+  U162/Y (NOR2XLTS)                        0.31       2.09 r
+  U317/Y (NAND2X1TS)                       0.20       2.29 f
+  U332/Y (OAI21X1TS)                       0.28       2.56 r
+  U406/CON (AFHCONX2TS)                    0.21       2.77 f
+  U408/CO (AFHCINX2TS)                     0.32       3.10 r
+  U404/CON (AFHCONX2TS)                    0.19       3.29 f
+  U338/CO (AFHCINX2TS)                     0.32       3.62 r
+  U530/CON (AFHCONX2TS)                    0.19       3.81 f
+  U531/S (AFHCINX2TS)                      0.47       4.28 f
+  U532/Y (AO22X2TS)                        0.30       4.59 f
+  regp_Q_reg_31_/D (DFFRX2TS)              0.00       4.59 f
+  data arrival time                                   4.59
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  regp_Q_reg_31_/CK (DFFRX2TS)             0.00       5.00 r
+  library setup time                      -0.41       4.59
+  data required time                                  4.59
+  -----------------------------------------------------------
+  data required time                                  4.59
+  data arrival time                                  -4.59
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: regp_Q_reg_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: regp_Q_reg_31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regp_Q_reg_17_/CK (DFFRX2TS)             0.00       0.00 r
+  regp_Q_reg_17_/Q (DFFRX2TS)              0.89       0.89 r
+  U145/Y (NOR2XLTS)                        0.30       1.19 f
+  U144/Y (NOR2XLTS)                        0.35       1.54 r
+  U315/Y (NAND2X1TS)                       0.24       1.77 f
+  U162/Y (NOR2XLTS)                        0.31       2.09 r
+  U317/Y (NAND2X1TS)                       0.20       2.29 f
+  U332/Y (OAI21X1TS)                       0.28       2.56 r
+  U406/CON (AFHCONX2TS)                    0.21       2.77 f
+  U408/CO (AFHCINX2TS)                     0.32       3.10 r
+  U404/CON (AFHCONX2TS)                    0.19       3.29 f
+  U338/CO (AFHCINX2TS)                     0.32       3.62 r
+  U530/CON (AFHCONX2TS)                    0.19       3.81 f
+  U531/S (AFHCINX2TS)                      0.47       4.28 f
+  U532/Y (AO22X2TS)                        0.30       4.59 f
+  regp_Q_reg_31_/D (DFFRX2TS)              0.00       4.59 f
+  data arrival time                                   4.59
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  regp_Q_reg_31_/CK (DFFRX2TS)             0.00       5.00 r
+  library setup time                      -0.41       4.59
+  data required time                                  4.59
+  -----------------------------------------------------------
+  data required time                                  4.59
+  data arrival time                                  -4.59
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: regp_Q_reg_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: regp_Q_reg_31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regp_Q_reg_17_/CK (DFFRX2TS)             0.00       0.00 r
+  regp_Q_reg_17_/Q (DFFRX2TS)              0.89       0.89 r
+  U145/Y (NOR2XLTS)                        0.30       1.19 f
+  U144/Y (NOR2XLTS)                        0.35       1.54 r
+  U315/Y (NAND2X1TS)                       0.24       1.77 f
+  U162/Y (NOR2XLTS)                        0.31       2.09 r
+  U317/Y (NAND2X1TS)                       0.20       2.29 f
+  U332/Y (OAI21X1TS)                       0.28       2.56 r
+  U406/CON (AFHCONX2TS)                    0.21       2.77 f
+  U408/CO (AFHCINX2TS)                     0.32       3.10 r
+  U404/CON (AFHCONX2TS)                    0.19       3.29 f
+  U338/CO (AFHCINX2TS)                     0.32       3.62 r
+  U530/CON (AFHCONX2TS)                    0.19       3.81 f
+  U531/S (AFHCINX2TS)                      0.47       4.28 f
+  U532/Y (AO22X2TS)                        0.30       4.59 f
+  regp_Q_reg_31_/D (DFFRX2TS)              0.00       4.59 f
+  data arrival time                                   4.59
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  regp_Q_reg_31_/CK (DFFRX2TS)             0.00       5.00 r
+  library setup time                      -0.41       4.59
+  data required time                                  4.59
+  -----------------------------------------------------------
+  data required time                                  4.59
+  data arrival time                                  -4.59
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: regp_Q_reg_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: regp_Q_reg_31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regp_Q_reg_17_/CK (DFFRX2TS)             0.00       0.00 r
+  regp_Q_reg_17_/Q (DFFRX2TS)              0.89       0.89 r
+  U145/Y (NOR2XLTS)                        0.30       1.19 f
+  U144/Y (NOR2XLTS)                        0.35       1.54 r
+  U315/Y (NAND2X1TS)                       0.24       1.77 f
+  U162/Y (NOR2XLTS)                        0.31       2.09 r
+  U317/Y (NAND2X1TS)                       0.20       2.29 f
+  U332/Y (OAI21X1TS)                       0.28       2.56 r
+  U406/CON (AFHCONX2TS)                    0.21       2.77 f
+  U408/CO (AFHCINX2TS)                     0.32       3.10 r
+  U404/CON (AFHCONX2TS)                    0.19       3.29 f
+  U338/CO (AFHCINX2TS)                     0.32       3.62 r
+  U530/CON (AFHCONX2TS)                    0.19       3.81 f
+  U531/S (AFHCINX2TS)                      0.47       4.28 f
+  U532/Y (AO22X2TS)                        0.30       4.59 f
+  regp_Q_reg_31_/D (DFFRX2TS)              0.00       4.59 f
+  data arrival time                                   4.59
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  regp_Q_reg_31_/CK (DFFRX2TS)             0.00       5.00 r
+  library setup time                      -0.41       4.59
+  data required time                                  4.59
+  -----------------------------------------------------------
+  data required time                                  4.59
+  data arrival time                                  -4.59
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: regp_Q_reg_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: regp_Q_reg_31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regp_Q_reg_17_/CK (DFFRX2TS)             0.00       0.00 r
+  regp_Q_reg_17_/Q (DFFRX2TS)              0.89       0.89 r
+  U145/Y (NOR2XLTS)                        0.30       1.19 f
+  U144/Y (NOR2XLTS)                        0.35       1.54 r
+  U315/Y (NAND2X1TS)                       0.24       1.77 f
+  U162/Y (NOR2XLTS)                        0.31       2.09 r
+  U317/Y (NAND2X1TS)                       0.20       2.29 f
+  U332/Y (OAI21X1TS)                       0.28       2.56 r
+  U406/CON (AFHCONX2TS)                    0.21       2.77 f
+  U408/CO (AFHCINX2TS)                     0.32       3.10 r
+  U404/CON (AFHCONX2TS)                    0.19       3.29 f
+  U338/CO (AFHCINX2TS)                     0.32       3.62 r
+  U530/CON (AFHCONX2TS)                    0.19       3.81 f
+  U531/S (AFHCINX2TS)                      0.47       4.28 f
+  U532/Y (AO22X2TS)                        0.30       4.59 f
+  regp_Q_reg_31_/D (DFFRX2TS)              0.00       4.59 f
+  data arrival time                                   4.59
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  regp_Q_reg_31_/CK (DFFRX2TS)             0.00       5.00 r
+  library setup time                      -0.41       4.59
+  data required time                                  4.59
+  -----------------------------------------------------------
+  data required time                                  4.59
+  data arrival time                                  -4.59
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: regp_Q_reg_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: regp_Q_reg_31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regp_Q_reg_17_/CK (DFFRX2TS)             0.00       0.00 r
+  regp_Q_reg_17_/Q (DFFRX2TS)              0.89       0.89 r
+  U145/Y (NOR2XLTS)                        0.30       1.19 f
+  U144/Y (NOR2XLTS)                        0.35       1.54 r
+  U315/Y (NAND2X1TS)                       0.24       1.77 f
+  U162/Y (NOR2XLTS)                        0.31       2.09 r
+  U317/Y (NAND2X1TS)                       0.20       2.29 f
+  U332/Y (OAI21X1TS)                       0.28       2.56 r
+  U406/CON (AFHCONX2TS)                    0.21       2.77 f
+  U408/CO (AFHCINX2TS)                     0.32       3.10 r
+  U404/CON (AFHCONX2TS)                    0.19       3.29 f
+  U338/CO (AFHCINX2TS)                     0.32       3.62 r
+  U530/CON (AFHCONX2TS)                    0.19       3.81 f
+  U531/S (AFHCINX2TS)                      0.47       4.28 f
+  U532/Y (AO22X2TS)                        0.30       4.59 f
+  regp_Q_reg_31_/D (DFFRX2TS)              0.00       4.59 f
+  data arrival time                                   4.59
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  regp_Q_reg_31_/CK (DFFRX2TS)             0.00       5.00 r
+  library setup time                      -0.41       4.59
+  data required time                                  4.59
+  -----------------------------------------------------------
+  data required time                                  4.59
+  data arrival time                                  -4.59
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: regp_Q_reg_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: regp_Q_reg_31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regp_Q_reg_17_/CK (DFFRX2TS)             0.00       0.00 r
+  regp_Q_reg_17_/Q (DFFRX2TS)              0.89       0.89 r
+  U145/Y (NOR2XLTS)                        0.30       1.19 f
+  U144/Y (NOR2XLTS)                        0.35       1.54 r
+  U315/Y (NAND2X1TS)                       0.24       1.77 f
+  U162/Y (NOR2XLTS)                        0.31       2.09 r
+  U317/Y (NAND2X1TS)                       0.20       2.29 f
+  U332/Y (OAI21X1TS)                       0.28       2.56 r
+  U406/CON (AFHCONX2TS)                    0.21       2.77 f
+  U408/CO (AFHCINX2TS)                     0.32       3.10 r
+  U404/CON (AFHCONX2TS)                    0.19       3.29 f
+  U338/CO (AFHCINX2TS)                     0.32       3.62 r
+  U530/CON (AFHCONX2TS)                    0.19       3.81 f
+  U531/S (AFHCINX2TS)                      0.47       4.28 f
+  U532/Y (AO22X2TS)                        0.30       4.59 f
+  regp_Q_reg_31_/D (DFFRX2TS)              0.00       4.59 f
+  data arrival time                                   4.59
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  regp_Q_reg_31_/CK (DFFRX2TS)             0.00       5.00 r
+  library setup time                      -0.41       4.59
+  data required time                                  4.59
+  -----------------------------------------------------------
+  data required time                                  4.59
+  data arrival time                                  -4.59
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: regp_Q_reg_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: regp_Q_reg_31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regp_Q_reg_17_/CK (DFFRX2TS)             0.00       0.00 r
+  regp_Q_reg_17_/Q (DFFRX2TS)              0.89       0.89 r
+  U145/Y (NOR2XLTS)                        0.30       1.19 f
+  U144/Y (NOR2XLTS)                        0.35       1.54 r
+  U315/Y (NAND2X1TS)                       0.24       1.77 f
+  U162/Y (NOR2XLTS)                        0.31       2.09 r
+  U317/Y (NAND2X1TS)                       0.20       2.29 f
+  U332/Y (OAI21X1TS)                       0.28       2.56 r
+  U406/CON (AFHCONX2TS)                    0.21       2.77 f
+  U408/CO (AFHCINX2TS)                     0.32       3.10 r
+  U404/CON (AFHCONX2TS)                    0.19       3.29 f
+  U338/CO (AFHCINX2TS)                     0.32       3.62 r
+  U530/CON (AFHCONX2TS)                    0.19       3.81 f
+  U531/S (AFHCINX2TS)                      0.47       4.28 f
+  U532/Y (AO22X2TS)                        0.30       4.59 f
+  regp_Q_reg_31_/D (DFFRX2TS)              0.00       4.59 f
+  data arrival time                                   4.59
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  regp_Q_reg_31_/CK (DFFRX2TS)             0.00       5.00 r
+  library setup time                      -0.41       4.59
+  data required time                                  4.59
+  -----------------------------------------------------------
+  data required time                                  4.59
+  data arrival time                                  -4.59
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: regp_Q_reg_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: regp_Q_reg_31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regp_Q_reg_17_/CK (DFFRX2TS)             0.00       0.00 r
+  regp_Q_reg_17_/Q (DFFRX2TS)              0.89       0.89 r
+  U145/Y (NOR2XLTS)                        0.30       1.19 f
+  U144/Y (NOR2XLTS)                        0.35       1.54 r
+  U315/Y (NAND2X1TS)                       0.24       1.77 f
+  U162/Y (NOR2XLTS)                        0.31       2.09 r
+  U317/Y (NAND2X1TS)                       0.20       2.29 f
+  U332/Y (OAI21X1TS)                       0.28       2.56 r
+  U406/CON (AFHCONX2TS)                    0.21       2.77 f
+  U408/CO (AFHCINX2TS)                     0.32       3.10 r
+  U404/CON (AFHCONX2TS)                    0.19       3.29 f
+  U338/CO (AFHCINX2TS)                     0.32       3.62 r
+  U530/CON (AFHCONX2TS)                    0.19       3.81 f
+  U531/S (AFHCINX2TS)                      0.47       4.28 f
+  U532/Y (AO22X2TS)                        0.30       4.59 f
+  regp_Q_reg_31_/D (DFFRX2TS)              0.00       4.59 f
+  data arrival time                                   4.59
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  regp_Q_reg_31_/CK (DFFRX2TS)             0.00       5.00 r
+  library setup time                      -0.41       4.59
+  data required time                                  4.59
+  -----------------------------------------------------------
+  data required time                                  4.59
+  data arrival time                                  -4.59
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: regp_Q_reg_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: regp_Q_reg_31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regp_Q_reg_17_/CK (DFFRX2TS)             0.00       0.00 r
+  regp_Q_reg_17_/Q (DFFRX2TS)              0.89       0.89 r
+  U145/Y (NOR2XLTS)                        0.30       1.19 f
+  U144/Y (NOR2XLTS)                        0.35       1.54 r
+  U315/Y (NAND2X1TS)                       0.24       1.77 f
+  U162/Y (NOR2XLTS)                        0.31       2.09 r
+  U317/Y (NAND2X1TS)                       0.20       2.29 f
+  U332/Y (OAI21X1TS)                       0.28       2.56 r
+  U406/CON (AFHCONX2TS)                    0.21       2.77 f
+  U408/CO (AFHCINX2TS)                     0.32       3.10 r
+  U404/CON (AFHCONX2TS)                    0.19       3.29 f
+  U338/CO (AFHCINX2TS)                     0.32       3.62 r
+  U530/CON (AFHCONX2TS)                    0.19       3.81 f
+  U531/S (AFHCINX2TS)                      0.47       4.28 f
+  U532/Y (AO22X2TS)                        0.30       4.59 f
+  regp_Q_reg_31_/D (DFFRX2TS)              0.00       4.59 f
+  data arrival time                                   4.59
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  regp_Q_reg_31_/CK (DFFRX2TS)             0.00       5.00 r
+  library setup time                      -0.41       4.59
+  data required time                                  4.59
+  -----------------------------------------------------------
+  data required time                                  4.59
+  data arrival time                                  -4.59
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: regp_Q_reg_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: regp_Q_reg_31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regp_Q_reg_17_/CK (DFFRX2TS)             0.00       0.00 r
+  regp_Q_reg_17_/Q (DFFRX2TS)              0.89       0.89 r
+  U145/Y (NOR2XLTS)                        0.30       1.19 f
+  U144/Y (NOR2XLTS)                        0.35       1.54 r
+  U315/Y (NAND2X1TS)                       0.24       1.77 f
+  U162/Y (NOR2XLTS)                        0.31       2.09 r
+  U317/Y (NAND2X1TS)                       0.20       2.29 f
+  U332/Y (OAI21X1TS)                       0.28       2.56 r
+  U406/CON (AFHCONX2TS)                    0.21       2.77 f
+  U408/CO (AFHCINX2TS)                     0.32       3.10 r
+  U404/CON (AFHCONX2TS)                    0.19       3.29 f
+  U338/CO (AFHCINX2TS)                     0.32       3.62 r
+  U530/CON (AFHCONX2TS)                    0.19       3.81 f
+  U531/S (AFHCINX2TS)                      0.47       4.28 f
+  U532/Y (AO22X2TS)                        0.30       4.59 f
+  regp_Q_reg_31_/D (DFFRX2TS)              0.00       4.59 f
+  data arrival time                                   4.59
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  regp_Q_reg_31_/CK (DFFRX2TS)             0.00       5.00 r
+  library setup time                      -0.41       4.59
+  data required time                                  4.59
+  -----------------------------------------------------------
+  data required time                                  4.59
+  data arrival time                                  -4.59
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: regp_Q_reg_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: regp_Q_reg_31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regp_Q_reg_17_/CK (DFFRX2TS)             0.00       0.00 r
+  regp_Q_reg_17_/Q (DFFRX2TS)              0.89       0.89 r
+  U145/Y (NOR2XLTS)                        0.30       1.19 f
+  U144/Y (NOR2XLTS)                        0.35       1.54 r
+  U315/Y (NAND2X1TS)                       0.24       1.77 f
+  U162/Y (NOR2XLTS)                        0.31       2.09 r
+  U317/Y (NAND2X1TS)                       0.20       2.29 f
+  U332/Y (OAI21X1TS)                       0.28       2.56 r
+  U406/CON (AFHCONX2TS)                    0.21       2.77 f
+  U408/CO (AFHCINX2TS)                     0.32       3.10 r
+  U404/CON (AFHCONX2TS)                    0.19       3.29 f
+  U338/CO (AFHCINX2TS)                     0.32       3.62 r
+  U530/CON (AFHCONX2TS)                    0.19       3.81 f
+  U531/S (AFHCINX2TS)                      0.47       4.28 f
+  U532/Y (AO22X2TS)                        0.30       4.59 f
+  regp_Q_reg_31_/D (DFFRX2TS)              0.00       4.59 f
+  data arrival time                                   4.59
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  regp_Q_reg_31_/CK (DFFRX2TS)             0.00       5.00 r
+  library setup time                      -0.41       4.59
+  data required time                                  4.59
+  -----------------------------------------------------------
+  data required time                                  4.59
+  data arrival time                                  -4.59
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: regp_Q_reg_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: regp_Q_reg_31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regp_Q_reg_17_/CK (DFFRX2TS)             0.00       0.00 r
+  regp_Q_reg_17_/Q (DFFRX2TS)              0.89       0.89 r
+  U145/Y (NOR2XLTS)                        0.30       1.19 f
+  U144/Y (NOR2XLTS)                        0.35       1.54 r
+  U315/Y (NAND2X1TS)                       0.24       1.77 f
+  U162/Y (NOR2XLTS)                        0.31       2.09 r
+  U317/Y (NAND2X1TS)                       0.20       2.29 f
+  U332/Y (OAI21X1TS)                       0.28       2.56 r
+  U406/CON (AFHCONX2TS)                    0.21       2.77 f
+  U408/CO (AFHCINX2TS)                     0.32       3.10 r
+  U404/CON (AFHCONX2TS)                    0.19       3.29 f
+  U338/CO (AFHCINX2TS)                     0.32       3.62 r
+  U530/CON (AFHCONX2TS)                    0.19       3.81 f
+  U531/S (AFHCINX2TS)                      0.47       4.28 f
+  U532/Y (AO22X2TS)                        0.30       4.59 f
+  regp_Q_reg_31_/D (DFFRX2TS)              0.00       4.59 f
+  data arrival time                                   4.59
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  regp_Q_reg_31_/CK (DFFRX2TS)             0.00       5.00 r
+  library setup time                      -0.41       4.59
+  data required time                                  4.59
+  -----------------------------------------------------------
+  data required time                                  4.59
+  data arrival time                                  -4.59
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: regp_Q_reg_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: regp_Q_reg_31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regp_Q_reg_17_/CK (DFFRX2TS)             0.00       0.00 r
+  regp_Q_reg_17_/Q (DFFRX2TS)              0.89       0.89 r
+  U145/Y (NOR2XLTS)                        0.30       1.19 f
+  U144/Y (NOR2XLTS)                        0.35       1.54 r
+  U315/Y (NAND2X1TS)                       0.24       1.77 f
+  U162/Y (NOR2XLTS)                        0.31       2.09 r
+  U317/Y (NAND2X1TS)                       0.20       2.29 f
+  U332/Y (OAI21X1TS)                       0.28       2.56 r
+  U406/CON (AFHCONX2TS)                    0.21       2.77 f
+  U408/CO (AFHCINX2TS)                     0.32       3.10 r
+  U404/CON (AFHCONX2TS)                    0.19       3.29 f
+  U338/CO (AFHCINX2TS)                     0.32       3.62 r
+  U530/CON (AFHCONX2TS)                    0.19       3.81 f
+  U531/S (AFHCINX2TS)                      0.47       4.28 f
+  U532/Y (AO22X2TS)                        0.30       4.59 f
+  regp_Q_reg_31_/D (DFFRX2TS)              0.00       4.59 f
+  data arrival time                                   4.59
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  regp_Q_reg_31_/CK (DFFRX2TS)             0.00       5.00 r
+  library setup time                      -0.41       4.59
+  data required time                                  4.59
+  -----------------------------------------------------------
+  data required time                                  4.59
+  data arrival time                                  -4.59
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

@@ -1,0 +1,415 @@
+****************************************
+Report : design
+Design : multiply
+Version: P-2019.03-SP2
+Date   : Sat Dec  3 14:09:59 2022
+****************************************
+
+Design Attribute                         Value
+---------------------------------------------------------------------------
+Operating Conditions:
+  analysis_type                          on_chip_variation
+  operating_condition_min_name           tt_1p2v_25c
+  process_min                            1
+  temperature_min                        25
+  voltage_min                            1.2
+  tree_type_min                          balanced_case
+
+  operating_condition_max_name           tt_1p2v_25c
+  process_max                            1
+  temperature_max                        25
+  voltage_max                            1.2
+  tree_type_max                          balanced_case
+
+Wire Load:                               (use report_wire_load for more information)
+  wire_load_mode                         top
+  wire_load_model_max                    --
+  wire_load_model_min                    --
+  wire_load_selection_group_max          --
+  wire_load_selection_group_min          --
+  wire_load_min_block_size               0
+
+Design Rules:
+  max_capacitance                        --
+  min_capacitance                        --
+  max_fanout                             --
+  max_transition                         --
+  static_integrity                       --
+  dynamic_integrity                      --
+  max_area                               --
+
+Timing Ranges:
+  early_factor                           --
+  late_factor                            --
+
+Pin Input Delays:
+None specified.
+
+Pin Output Delays:
+None specified.
+Fast Analysis:                           disabled
+
+1
+****************************************
+Report : reference
+Design : multiply
+Version: P-2019.03-SP2
+Date   : Sat Dec  3 14:09:59 2022
+****************************************
+
+
+Attributes:
+    b - black-box (unknown)
+    h - hierarchical
+    n - noncombinational
+    u - contains unmapped logic
+    A - abstracted timing model
+    E - extracted timing model
+    S - Stamp timing model
+    Q - Quick timing model (QTM)
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+--------------------------------------------------------------------------------
+AFHCINX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   47.52     3         142.56      
+AFHCONX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   40.32     3         120.96      
+AND4X1TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   10.08     1          10.08      
+AO22X2TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   11.52     1          11.52      
+AO22XLTS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   10.08     50        504.00      
+AOI211XLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     1           8.64      
+AOI21X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     18        129.60      
+AOI222XLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   12.96     27        349.92      
+AOI22X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     3          25.92      
+CLKAND2X2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     1           7.20      
+CLKBUFX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    5.76     52        299.52      
+CLKINVX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    4.32     1           4.32      
+DFFQX1TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   24.48     48       1175.04      n
+DFFRX2TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   33.12     32       1059.84      n
+DFFRXLTS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   33.12     2          66.24      n
+INVX2TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    4.32     88        380.16      
+NAND2X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    5.76     57        328.32      
+NOR2X1TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    5.76     2          11.52      
+NOR2X2TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     1           7.20      
+NOR2XLTS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    5.76     42        241.92      
+NOR4XLTS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     4          34.56      
+OAI21X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     5          36.00      
+OAI21XLTS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     23        165.60      
+OAI2BB1X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     3          25.92      
+OR2X1TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     3          21.60      
+XNOR2X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   11.52     12        138.24      
+XOR2XLTS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   11.52     13        149.76      
+--------------------------------------------------------------------------------
+Total 27 references                                   5456.16
+1
+****************************************
+Report : constraint
+Design : multiply
+Version: P-2019.03-SP2
+Date   : Sat Dec  3 14:09:59 2022
+****************************************
+
+                                                   Weighted
+    Group (max_delay/setup)      Cost     Weight     Cost
+    -----------------------------------------------------
+    clk                          0.00      1.00      0.00
+    -----------------------------------------------------
+    max_delay/setup                                  0.00
+
+                                                   Weighted
+    Group (min_delay/hold)       Cost     Weight     Cost
+    -----------------------------------------------------
+    clk                          0.00      1.00      0.00
+    -----------------------------------------------------
+    min_delay/hold                                   0.00
+
+    Constraint                                       Cost
+    -----------------------------------------------------
+    max_delay/setup                                  0.00  (MET)
+    min_delay/hold                                   0.00  (MET)
+    recovery                                         0.00  (MET)
+    removal                                          0.00  (MET)
+    sequential_clock_pulse_width                     0.00  (MET)
+    sequential_clock_min_period                      0.00  (MET)
+    max_capacitance                                  0.00  (MET)
+    max_transition                                   0.00  (MET)
+
+1
+****************************************
+Report : constraint
+	-all_violators
+	-path slack_only
+Design : multiply
+Version: P-2019.03-SP2
+Date   : Sat Dec  3 14:09:59 2022
+****************************************
+
+
+
+
+
+
+1
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min_max
+	-max_paths 1
+	-sort_by slack
+Design : multiply
+Version: P-2019.03-SP2
+Date   : Sat Dec  3 14:09:59 2022
+****************************************
+
+
+  Startpoint: dataq[14] (input port clocked by clk)
+  Endpoint: ShiftQ_Q_reg_14_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                 0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  input external delay                                  0.0500     0.0500 f
+  dataq[14] (in)                                        0.0175     0.0675 f
+  U541/Y (AOI22X1TS)                                    0.1588     0.2263 r
+  U542/Y (OAI2BB1X1TS)                                  0.1021     0.3284 f
+  ShiftQ_Q_reg_14_/D (DFFQX1TS)                         0.0000     0.3284 f
+  data arrival time                                                0.3284
+
+  clock clk (rise edge)                                 0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  clock reconvergence pessimism                         0.0000     0.0000
+  ShiftQ_Q_reg_14_/CK (DFFQX1TS)                                   0.0000 r
+  library hold time                                    -0.0168    -0.0168
+  data required time                                              -0.0168
+  ------------------------------------------------------------------------------
+  data required time                                              -0.0168
+  data arrival time                                               -0.3284
+  ------------------------------------------------------------------------------
+  slack (MET)                                                      0.3452
+
+
+
+  Startpoint: regp_Q_reg_1_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: regp_Q_reg_31_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  ---------------------------------------------------------------
+  clock clk (rise edge)                  0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  regp_Q_reg_1_/CK (DFFRX2TS)            0.0000     0.0000 r
+  regp_Q_reg_1_/Q (DFFRX2TS)             0.8186     0.8186 f
+  U168/Y (NOR2XLTS)                      0.3677     1.1862 r
+  U137/Y (OAI21X1TS)                     0.2964     1.4826 f
+  U292/Y (AOI21X1TS)                     0.2776     1.7602 r
+  U299/Y (OAI21X1TS)                     0.1940     1.9543 f
+  U314/Y (AOI21X1TS)                     0.3150     2.2693 r
+  U332/Y (OAI21X1TS)                     0.2645     2.5338 f
+  U406/CON (AFHCONX2TS)                  0.2228     2.7566 r
+  U408/CO (AFHCINX2TS)                   0.2070     2.9635 f
+  U404/CON (AFHCONX2TS)                  0.2347     3.1982 r
+  U338/CO (AFHCINX2TS)                   0.2070     3.4052 f
+  U530/CON (AFHCONX2TS)                  0.2347     3.6399 r
+  U531/S (AFHCINX2TS)                    0.3979     4.0378 f
+  U532/Y (AO22X2TS)                      0.3046     4.3425 f
+  regp_Q_reg_31_/D (DFFRX2TS)            0.0000     4.3425 f
+  data arrival time                                 4.3425
+
+  clock clk (rise edge)                  6.0000     6.0000
+  clock network delay (ideal)            0.0000     6.0000
+  clock reconvergence pessimism          0.0000     6.0000
+  regp_Q_reg_31_/CK (DFFRX2TS)                      6.0000 r
+  library setup time                    -0.4108     5.5892
+  data required time                                5.5892
+  ---------------------------------------------------------------
+  data required time                                5.5892
+  data arrival time                                -4.3425
+  ---------------------------------------------------------------
+  slack (MET)                                       1.2468
+
+
+1
+****************************************
+Report : Switching Activity
+	
+Design : multiply
+Version: P-2019.03-SP2
+Date   : Sat Dec  3 14:09:59 2022
+****************************************
+
+ Switching Activity Overview Statistics for "multiply"
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                  From Activity     From         From         From             From            From                                                            Not
+Object Type       File (%)          SSA (%)      SSA Force (%) SSA Force (%)   SCA (%)         Clock (%)       Default (%)     Propagated(%)   Implied(%)      Annotated(%)  Total
+                                                 Annotated    Implied                                                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Nets             540(100.00%)      0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      540
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nets Driven by
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Primary Input     37(100.00%)       0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      37
+Tri-State         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Black Box         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Sequential        84(100.00%)       0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      84
+Combinational     419(100.00%)      0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      419
+Memory            0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Clock Gate        0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Static Probability Overview Statistics for "multiply"
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                  From Activity     From         From         From             From            From                                                            Not
+Object Type       File (%)          SSA (%)      SSA Force (%) SSA Force (%)   SCA (%)         Clock (%)       Default (%)     Propagated(%)   Implied(%)      Annotated(%)  Total
+                                                 Annotated    Implied                                                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Nets             540(100.00%)      0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      540
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nets Driven by
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Primary Input     37(100.00%)       0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      37
+Tri-State         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Black Box         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Sequential        84(100.00%)       0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      84
+Combinational     419(100.00%)      0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      419
+Memory            0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Clock Gate        0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1
+****************************************
+Report : Switching Activity
+	-list_not_annotated
+Design : multiply
+Version: P-2019.03-SP2
+Date   : Sat Dec  3 14:09:59 2022
+****************************************
+
+ Switching Activity Overview Statistics for "multiply"
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                  From Activity     From         From         From             From            From                                                            Not
+Object Type       File (%)          SSA (%)      SSA Force (%) SSA Force (%)   SCA (%)         Clock (%)       Default (%)     Propagated(%)   Implied(%)      Annotated(%)  Total
+                                                 Annotated    Implied                                                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Nets             540(100.00%)      0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      540
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nets Driven by
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Primary Input     37(100.00%)       0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      37
+Tri-State         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Black Box         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Sequential        84(100.00%)       0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      84
+Combinational     419(100.00%)      0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      419
+Memory            0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Clock Gate        0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Static Probability Overview Statistics for "multiply"
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                  From Activity     From         From         From             From            From                                                            Not
+Object Type       File (%)          SSA (%)      SSA Force (%) SSA Force (%)   SCA (%)         Clock (%)       Default (%)     Propagated(%)   Implied(%)      Annotated(%)  Total
+                                                 Annotated    Implied                                                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Nets             540(100.00%)      0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      540
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nets Driven by
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Primary Input     37(100.00%)       0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      37
+Tri-State         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Black Box         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Sequential        84(100.00%)       0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      84
+Combinational     419(100.00%)      0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      419
+Memory            0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Clock Gate        0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+List of nonannotated nets :
+1
+****************************************
+Report : Time Based Power
+Design : multiply
+Version: P-2019.03-SP2
+Date   : Sat Dec  3 14:10:00 2022
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network           1.174e-04    0.0000    0.0000 1.174e-04 (82.13%)  i
+register                7.347e-06 2.008e-06 2.963e-09 9.359e-06 ( 6.55%)  
+combinational           9.409e-06 6.766e-06 3.050e-09 1.618e-05 (11.32%)  
+sequential                 0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 8.775e-06   ( 6.14%)
+  Cell Internal Power  = 1.341e-04   (93.86%)
+  Cell Leakage Power   = 6.013e-09   ( 0.00%)
+                         ---------
+Total Power            = 1.429e-04  (100.00%)
+
+X Transition Power     =    0.0000
+Glitching Power        = 3.351e-07
+
+Peak Power             =    0.0122
+Peak Time              =   214.500
+
+1
+****************************************
+Report : Time Based Power
+	-hierarchy
+Design : multiply
+Version: P-2019.03-SP2
+Date   : Sat Dec  3 14:10:00 2022
+****************************************
+
+
+
+                                      Int      Switch   Leak      Total
+Hierarchy                             Power    Power    Power     Power    %
+--------------------------------------------------------------------------------
+multiply                              1.34e-04 8.77e-06 6.01e-09  1.43e-04 100.0
+
+
+                                      Peak     Peak            Glitch   X-tran
+Hierarchy                             Power    Time            Power    Power
+--------------------------------------------------------------------------------
+multiply                              1.22e-02 214.500-214.501 3.35e-07    0.000
+1
