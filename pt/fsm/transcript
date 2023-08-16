@@ -1,0 +1,65 @@
+# //  Questa Sim
+# //  Version 10.7b_1 linux Jul 26 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading project FSM
+vsim -voptargs=+acc work.tb_fsm
+# vsim -voptargs="+acc" work.tb_fsm 
+# Start time: 22:33:52 on Dec 15,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.tb_fsm(fast)
+# Loading work.fsm(fast)
+# Loading work.add(fast)
+# Loading work.cla(fast)
+# Loading work.multiply(fast)
+# Loading work.shiftrne(fast)
+# Loading work.shiftlne(fast)
+# Loading work.regne(fast)
+# Loading work.cmem(fast)
+# Loading work.COEFF_MEMORY(fast)
+# Loading work.dmem(fast)
+# Loading work.dmem10(fast)
+# Loading work.DATA_MEMORY(fast)
+# Loading work.fir_buffer(fast)
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+# Debug data file, vsim.dbg, does not exist.
+# 
+# Invoke vsim with -debugDB to create this file.
+vsim -debugDB fsm
+# End time: 22:34:38 on Dec 15,2022, Elapsed time: 0:00:46
+# Errors: 2, Warnings: 0
+# vsim -debugDB fsm 
+# Start time: 22:34:38 on Dec 15,2022
+# ** Warning: (vsim-4308) Enabling visibility using +acc is recommended with debug flow.
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Warning: (vopt-4308) Enabling visibility using +acc is recommended with debug flow.
+# ** Note: (vopt-143) Recognized 1 FSM in module "fsm(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "multiply(fast)".
+# ** Note: (vopt-4301) Memory core inferred for signal 'buffer' width=16, depth=64, type=RAM at location /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/fsm/fir_buffer.v:9
+# Loading work.fsm(fast)
+# Loading work.add(fast)
+# Loading work.cla(fast)
+# Loading work.multiply(fast)
+# Loading work.shiftrne(fast)
+# Loading work.shiftlne(fast)
+# Loading work.regne(fast)
+# Loading work.cmem(fast)
+# Loading work.COEFF_MEMORY(fast)
+# Loading work.dmem(fast)
+# Loading work.dmem10(fast)
+# Loading work.DATA_MEMORY(fast)
+# Loading work.fir_buffer(fast)
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.

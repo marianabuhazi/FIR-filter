@@ -1,0 +1,1 @@
+pt_shell -file bit_adder.tcl > bit_adder.log &
