@@ -1,0 +1,321 @@
+# //  Questa Sim
+# //  Version 10.7b_1 linux Jul 26 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading project dmem
+# reading /tools/mentor/questa_10.7b_1/questasim/linux/../modelsim.ini
+# Loading project alu
+vsim -voptargs=+acc work.tb_add
+# vsim -voptargs="+acc" work.tb_add 
+# Start time: 13:55:11 on Dec 11,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.tb_add(fast)
+# Loading work.add(fast)
+# Loading work.cla(fast)
+add wave -position insertpoint sim:/tb_add/*
+run
+# ** Note: $finish    : /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/tb_add.v(36)
+#    Time: 25 ns  Iteration: 0  Instance: /tb_add
+# 1
+# Break in Module tb_add at /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/tb_add.v line 36
+# Compile of add.v failed with 1 errors.
+# Compile of add.v was successful.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_add(fast)
+# Loading work.add(fast)
+# Loading work.cla(fast)
+# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 's'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_add/add_0/cla_0 File: /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/add.v Line: 13
+# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 's'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_add/add_0/cla_1 File: /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/add.v Line: 14
+# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 's'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_add/add_0/cla_2 File: /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/add.v Line: 15
+# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 's'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_add/add_0/cla_3 File: /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/add.v Line: 16
+# Compile of add.v was successful.
+# Compile of cla.v was successful.
+# Compile of fa.v was successful.
+# Compile of ha.v was successful.
+# Compile of multiply.v was successful.
+# Compile of regne.v was successful.
+# Compile of shiftlne.v was successful.
+# Compile of shiftrne.v was successful.
+# Compile of tb_add.v was successful.
+# Compile of tb_cla.v was successful.
+# Compile of tb_fa.v was successful.
+# Compile of tb_multiply.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# No Design Loaded!
+vsim -voptargs=+acc work.tb_add
+# vsim -voptargs="+acc" work.tb_add 
+# Start time: 13:55:11 on Dec 11,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_add(fast)
+# Loading work.add(fast)
+# Loading work.cla(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'add_0'.  Expected 6, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_add/add_0 File: /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/tb_add.v Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'clk'. The port definition is at: /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/add.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_add/add_0 File: /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/tb_add.v Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'rstn'. The port definition is at: /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/add.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_add/add_0 File: /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/tb_add.v Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'b'. The port definition is at: /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/add.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_add/add_0 File: /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/tb_add.v Line: 13
+# ** Warning: (vsim-3722) /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/tb_add.v(13): [TFMPC] - Missing connection for port 's'.
+# ** Warning: (vsim-3722) /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/tb_add.v(13): [TFMPC] - Missing connection for port 'c16'.
+# Compile of add.v was successful.
+# Compile of cla.v was successful.
+# Compile of fa.v was successful.
+# Compile of ha.v was successful.
+# Compile of multiply.v was successful.
+# Compile of regne.v was successful.
+# Compile of shiftlne.v was successful.
+# Compile of shiftrne.v was successful.
+# Compile of tb_add.v was successful.
+# Compile of tb_cla.v was successful.
+# Compile of tb_fa.v was successful.
+# Compile of tb_multiply.v was successful.
+# 12 compiles, 0 failed with no errors.
+# Compile of add.v was successful.
+# Compile of cla.v was successful.
+# Compile of fa.v was successful.
+# Compile of ha.v was successful.
+# Compile of multiply.v was successful.
+# Compile of regne.v was successful.
+# Compile of shiftlne.v was successful.
+# Compile of shiftrne.v was successful.
+# Compile of tb_add.v was successful.
+# Compile of tb_cla.v was successful.
+# Compile of tb_fa.v was successful.
+# Compile of tb_multiply.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.tb_add(fast)
+# Loading work.add(fast)
+# Loading work.cla(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'add_0'.  Expected 6, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_add/add_0 File: /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/tb_add.v Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'clk'. The port definition is at: /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/add.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_add/add_0 File: /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/tb_add.v Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'rstn'. The port definition is at: /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/add.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_add/add_0 File: /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/tb_add.v Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'b'. The port definition is at: /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/add.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_add/add_0 File: /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/tb_add.v Line: 13
+# ** Warning: (vsim-3722) /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/tb_add.v(13): [TFMPC] - Missing connection for port 's'.
+# ** Warning: (vsim-3722) /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/tb_add.v(13): [TFMPC] - Missing connection for port 'c16'.
+# Compile of add.v was successful.
+# Compile of cla.v was successful.
+# Compile of fa.v was successful.
+# Compile of ha.v was successful.
+# Compile of multiply.v was successful.
+# Compile of regne.v was successful.
+# Compile of shiftlne.v was successful.
+# Compile of shiftrne.v was successful.
+# Compile of tb_add.v was successful.
+# Compile of tb_cla.v was successful.
+# Compile of tb_fa.v was successful.
+# Compile of tb_multiply.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_add(fast)
+# Loading work.add(fast)
+# Loading work.cla(fast)
+run
+# ** Note: $finish    : /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/tb_add.v(52)
+#    Time: 43500 ps  Iteration: 0  Instance: /tb_add
+# 1
+# Break in Module tb_add at /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/tb_add.v line 52
+# Compile of add.v was successful.
+# Compile of cla.v was successful.
+# Compile of fa.v was successful.
+# Compile of ha.v was successful.
+# Compile of multiply.v was successful.
+# Compile of regne.v was successful.
+# Compile of shiftlne.v was successful.
+# Compile of shiftrne.v was successful.
+# Compile of tb_add.v failed with 1 errors.
+# Compile of tb_cla.v was successful.
+# Compile of tb_fa.v was successful.
+# Compile of tb_multiply.v was successful.
+# 12 compiles, 1 failed with 1 error.
+# Compile of add.v was successful.
+# Compile of cla.v was successful.
+# Compile of fa.v was successful.
+# Compile of ha.v was successful.
+# Compile of multiply.v was successful.
+# Compile of regne.v was successful.
+# Compile of shiftlne.v was successful.
+# Compile of shiftrne.v was successful.
+# Compile of tb_add.v was successful.
+# Compile of tb_cla.v was successful.
+# Compile of tb_fa.v was successful.
+# Compile of tb_multiply.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_add(fast)
+# Loading work.add(fast)
+# Loading work.cla(fast)
+restart -f -nowave
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.tb_add(fast)
+# Loading work.add(fast)
+# Loading work.cla(fast)
+add wave -position insertpoint sim:/tb_add/*
+run
+# ** Note: $finish    : /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/tb_add.v(52)
+#    Time: 43500 ps  Iteration: 0  Instance: /tb_add
+# 1
+# Break in Module tb_add at /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/tb_add.v line 52
+# Compile of add.v was successful.
+# Compile of cla.v was successful.
+# Compile of fa.v was successful.
+# Compile of ha.v was successful.
+# Compile of multiply.v was successful.
+# Compile of regne.v was successful.
+# Compile of shiftlne.v was successful.
+# Compile of shiftrne.v was successful.
+# Compile of tb_add.v was successful.
+# Compile of tb_cla.v was successful.
+# Compile of tb_fa.v was successful.
+# Compile of tb_multiply.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f -nowave
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_add(fast)
+# Loading work.add(fast)
+# Loading work.cla(fast)
+add wave -position insertpoint sim:/tb_add/*
+run -continue
+# ** Note: $finish    : /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/tb_add.v(52)
+#    Time: 43500 ps  Iteration: 0  Instance: /tb_add
+# 1
+# Break in Module tb_add at /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/tb_add.v line 52
+# Compile of add.v was successful.
+# Compile of cla.v was successful.
+# Compile of fa.v was successful.
+# Compile of ha.v was successful.
+# Compile of multiply.v was successful.
+# Compile of regne.v was successful.
+# Compile of shiftlne.v was successful.
+# Compile of shiftrne.v was successful.
+# Compile of tb_add.v was successful.
+# Compile of tb_cla.v was successful.
+# Compile of tb_fa.v was successful.
+# Compile of tb_multiply.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_add(fast)
+# Loading work.add(fast)
+# Loading work.cla(fast)
+run
+# ** Note: $finish    : /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/tb_add.v(54)
+#    Time: 54500 ps  Iteration: 0  Instance: /tb_add
+# 1
+# Break in Module tb_add at /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/tb_add.v line 54
+# Compile of add.v was successful.
+# Compile of cla.v was successful.
+# Compile of fa.v was successful.
+# Compile of ha.v was successful.
+# Compile of multiply.v was successful.
+# Compile of regne.v was successful.
+# Compile of shiftlne.v was successful.
+# Compile of shiftrne.v was successful.
+# Compile of tb_add.v was successful.
+# Compile of tb_cla.v was successful.
+# Compile of tb_fa.v was successful.
+# Compile of tb_multiply.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_add(fast)
+# Loading work.add(fast)
+# Loading work.cla(fast)
+run
+# ** Note: $finish    : /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/tb_add.v(54)
+#    Time: 54500 ps  Iteration: 0  Instance: /tb_add
+# 1
+# Break in Module tb_add at /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/tb_add.v line 54
+# Compile of add.v failed with 1 errors.
+# Compile of cla.v was successful.
+# Compile of fa.v was successful.
+# Compile of ha.v was successful.
+# Compile of multiply.v was successful.
+# Compile of regne.v was successful.
+# Compile of shiftlne.v was successful.
+# Compile of shiftrne.v was successful.
+# Compile of tb_add.v was successful.
+# Compile of tb_cla.v was successful.
+# Compile of tb_fa.v was successful.
+# Compile of tb_multiply.v was successful.
+# 12 compiles, 1 failed with 1 error.
+# Compile of add.v was successful.
+# Compile of cla.v was successful.
+# Compile of fa.v was successful.
+# Compile of ha.v was successful.
+# Compile of multiply.v was successful.
+# Compile of regne.v was successful.
+# Compile of shiftlne.v was successful.
+# Compile of shiftrne.v was successful.
+# Compile of tb_add.v was successful.
+# Compile of tb_cla.v was successful.
+# Compile of tb_fa.v was successful.
+# Compile of tb_multiply.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_add(fast)
+# Loading work.add(fast)
+# Loading work.cla(fast)
+# Warning in wave window restart: (vish-4014) No objects found matching '/tb_add/c16'. 
+restart -f -nowave
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.tb_add(fast)
+# Loading work.add(fast)
+# Loading work.cla(fast)
+add wave -position insertpoint sim:/tb_add/*
+run -continue
+# ** Note: $finish    : /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/tb_add.v(54)
+#    Time: 54500 ps  Iteration: 0  Instance: /tb_add
+# 1
+# Break in Module tb_add at /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/tb_add.v line 54
+# Compile of add.v was successful.
+# Compile of cla.v was successful.
+# Compile of fa.v was successful.
+# Compile of ha.v was successful.
+# Compile of multiply.v was successful.
+# Compile of regne.v was successful.
+# Compile of shiftlne.v was successful.
+# Compile of shiftrne.v was successful.
+# Compile of tb_add.v was successful.
+# Compile of tb_cla.v was successful.
+# Compile of tb_fa.v was successful.
+# Compile of tb_multiply.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_add(fast)
+# Loading work.add(fast)
+# Loading work.cla(fast)
+run
+# ** Note: $finish    : /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/tb_add.v(54)
+#    Time: 54500 ps  Iteration: 0  Instance: /tb_add
+# 1
+# Break in Module tb_add at /homes/user/stud/spring22/ma4107/csee4823/fir/qsim_rtl/alu/tb_add.v line 54
+# End time: 15:16:05 on Dec 11,2022, Elapsed time: 1:20:54
+# Errors: 1, Warnings: 0
